@@ -6,6 +6,8 @@
     <title>Login</title>
     <link rel="shortcut icon" href="https://img.icons8.com/metro/52/000000/library.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
     <link rel="stylesheet" href="style.css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
@@ -30,12 +32,12 @@
                 <h1 style="padding: 20px; text-align: center; color: azure;">Log In</h1>
                 <form style="color: azure;" onsubmit="return validateForm()">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <label for="mail">Email address</label>
+                        <input type="email" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Enter email" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <label for="pwd">Password</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Password" required>
                     </div>
                     <div class="form-group">
                         <div class="form-check">
@@ -43,7 +45,7 @@
                             <label class="form-check-label" for="exampleCheck1">Remember me</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Log-in</button>
+                    <button type="submit" class="btn btn-primary btn-block" formaction="library.html">Log-in</button>
                     <div class="form-group">
                         <p class="message">Not yet registered? <a href="createaccount.html">Create an account</a></p>
                     </div>
@@ -51,6 +53,119 @@
             </div>
         </div>
     </div>
+
+    <div style="height: 80px;"></div>
+
+    <!-- Footer -->
+    <footer style="background-color: #3E4551; color: #ffffff;" class="page-footer font-small indigo">
+
+        <!-- Footer Links -->
+        <div class="container">
+  
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+  
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="library.html">Home</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="books.html">Books</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="authors.html">Authors</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="login.html">Log in</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 mb-3">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="createaccount.html">Create Account</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+          </div>
+          <!-- Grid row-->
+  
+          <!-- Grid row-->
+  
+            <!-- Grid column -->
+            <div class="col-md-8 col-12 mt-5"></div>
+            <!-- Grid column -->
+  
+          <!-- Grid row-->
+  
+          <!-- Grid row-->
+          <div class="row pb-3">
+  
+            <!-- Grid column -->
+            <div class="col-md-12">
+  
+              <div style="text-align: center;" class="mb-5 flex-center">
+  
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/" class="fb-ic">
+                  <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
+                </a>
+                <!-- Twitter -->
+                <a href="https://www.twitter.com/" class="tw-ic">
+                  <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
+                </a>
+                <!-- Google +-->
+                <a href="https://aboutme.google.com/u/0/?referer=gplus" class="gplus-ic">
+                  <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a href="https://www.linkedin.com/" class="li-ic">
+                  <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a href="https://www.instagram.com/" class="ins-ic">
+                  <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
+                </a>
+                <!--Pinterest-->
+                <a href="https://www.pinterest.com/" class="pin-ic">
+                  <i class="fab fa-pinterest fa-lg white-text"> </i>
+                </a>
+  
+              </div>
+  
+            </div>
+            <!-- Grid column -->
+  
+          </div>
+          <!-- Grid row-->
+  
+        </div>
+        <!-- Footer Links -->
+  
+        <!-- Copyright -->
+        <div style="background-color: #323741;" class="footer-copyright text-center py-3 text-muted">© 2020 Copyright: Library Management System</div>
+        <!-- Copyright -->
+  
+    </footer>
+    <!-- Footer -->
 
     <script src="login.js"></script>
     

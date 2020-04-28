@@ -8,13 +8,36 @@ function validate(){
     if (a.value == "" || b.value == "" || c.value == "" || d.value == "" || e.value == ""){
         alert("All fields are required");
         return false;
+    }    
+    else {
+        return email();
     }
-    else if (d.value.length<8){
-        alert("Password must be atleast 8 characters long");
-        return false;
+
+    function email() {
+        let regex1 = /^\w[\w\.-]+\w@[A-Za-z0-9][A-Za-z0-9-]+[A-Za-z0-9]\.[a-z]{2,3}(\.[a-z]{2,3})?$/;
+
+        if (regex1.test(c.value)) {
+            return pass();
+        } else {
+            alert("Enter valid email address");
+            return false;
+        }
     }
-    else if (pwd.value |= cpwd.value){
-        alert("Passwords do not match");
-        return false;
+
+    function pass() {
+        let regex3 = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/; 
+        if (regex3.test(d.value)) {
+            if (d.value == e.value) {
+                alert("Your account has been created successfully")
+                return true;
+            } else {
+                alert("Passwords do not match");
+                return false;
+            }
+        } else {
+            alert("Invalid password\n\nNote: Your password must contain atleast eight characters and include an uppercase letter, a lowercase letter and a number");
+            return false;
+        }
     }
+    
 }
